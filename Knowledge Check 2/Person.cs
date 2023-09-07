@@ -13,9 +13,7 @@ namespace Knowledge_Check_2
 		public string? Gender { get; set; }
 
 
-		public Person()
-		{
-		}
+		
 
 
 
