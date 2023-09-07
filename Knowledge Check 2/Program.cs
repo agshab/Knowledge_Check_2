@@ -53,18 +53,17 @@ namespace Knowledge_Check_2
             foreach(var Student in studentsList)
             {
 
-                Console.WriteLine($"The student first name is:  {Student.FirstName} \n" +
-                    $"The Student last name is:                 {Student.LastName}\n"+
-                    $"The student gender is:                    {Student.Gender}\n" +
-                    $"The student ID is:                        {Student.StudentID}\n" +
-                    $"The student GPA is:                       {Student.GPA}\n" +
-                    $"The student major is:                     {Student.Major}\n");
+                Console.WriteLine($"The student first name is:      {Student.FirstName} \n" +
+                                    $"The Student last name is:     {Student.LastName}\n"+
+                                    $"The student gender is:        {Student.Gender}\n" +
+                                    $"The student ID is:            {Student.StudentID}\n" +
+                                    $"The student GPA is:           {Student.GPA}\n" +
+                                    $"The student major is:         {Student.Major}\n");
             }
 
             //int a = 1;
             //a++;
             //Console.WriteLine(a);
-
 
             //Student s = Console.ReadLine();
 

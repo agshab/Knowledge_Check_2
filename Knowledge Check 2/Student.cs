@@ -9,19 +9,8 @@ namespace Knowledge_Check_2
 
 		public int StudentID { get; set; }
 		public decimal GPA { get; set; }
-		public string Major { get; set; }
+		public string? Major { get; set; }
 		
-
-
-
-
-
-
-
-
-        public Student()
-		{
-		}
 
 
 
