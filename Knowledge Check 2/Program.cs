@@ -15,34 +15,34 @@ namespace Knowledge_Check_2
 
 
             List<Student> studentsList = new List<Student>();
-            for (int i = 0; i < numberOfStudents; i++) i = i + 1; //i++ means add 1 to i to once, each time/
+            for (int i = 0; i < numberOfStudents; i++) //i++ means add 1 to i to once, each time/
             {
-                Student student = new Student();
+                Student newstudent = new Student();
 
 
                 Console.WriteLine("Please enter the student's first name.");
-                student.FirstName = Console.ReadLine();
+                newstudent.FirstName = Console.ReadLine();
 
                 Console.WriteLine("Please enter the student's last name.");
-                student.LastName = Console.ReadLine();
+                newstudent.LastName = Console.ReadLine();
 
                 Console.WriteLine("Please enter the student's gnder.");
-                student.Gender = Console.ReadLine();
+                newstudent.Gender = Console.ReadLine();
 
                 Console.WriteLine("Please assign the student's ID");
                 int.TryParse(Console.ReadLine(), out int result);
-                student.StudentID = result;
+                newstudent.StudentID = result;
 
                 Console.WriteLine("Please enter the student's GPA.");
                 decimal.TryParse(Console.ReadLine(), out decimal GPAresult);
-                student.GPA = GPAresult;
+                newstudent.GPA = GPAresult;
 
 
                 Console.WriteLine("Please enter the student's Major.");
-                student.Major = Console.ReadLine();
+                newstudent.Major = Console.ReadLine();
 
 
-                studentsList.Add(student);
+                studentsList.Add(newstudent);
 
                
 
@@ -50,15 +50,15 @@ namespace Knowledge_Check_2
 
             }
 
-            foreach(var Student in studentsList)
+            foreach(var x in studentsList) // "x" here is an object just like "i" in the foc loop above and "newstudent" above
             {
 
-                Console.WriteLine($"The student first name is:      {Student.FirstName} \n" +
-                                    $"The Student last name is:     {Student.LastName}\n"+
-                                    $"The student gender is:        {Student.Gender}\n" +
-                                    $"The student ID is:            {Student.StudentID}\n" +
-                                    $"The student GPA is:           {Student.GPA}\n" +
-                                    $"The student major is:         {Student.Major}\n");
+                Console.WriteLine($"The student first name is:      {x.FirstName} \n" +
+                                    $"The Student last name is:     {x.LastName}\n"+
+                                    $"The student gender is:        {x.Gender}\n" +
+                                    $"The student ID is:            {x.StudentID}\n" +
+                                    $"The student GPA is:           {x.GPA}\n" +
+                                    $"The student major is:         {x.Major}\n");
             }
 
             //int a = 1;
@@ -66,7 +66,7 @@ namespace Knowledge_Check_2
             //Console.WriteLine(a);
 
             //Student s = Console.ReadLine();
-
+            Console.ReadLine();
         }
     }
 }
